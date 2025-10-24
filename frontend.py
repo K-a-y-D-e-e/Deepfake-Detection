@@ -378,17 +378,17 @@ def home_page():
         st.markdown('<div class="subtitle">Advanced Deepfake Detection Powered by AI</div>', unsafe_allow_html=True)
     
     # Logo
-    col1, col2, col3 = st.columns([1, 1, 1])
-    with col2:
-        logo_path = "logo.png"
-        if not os.path.exists(logo_path):
-            gdown.download(
-                "https://drive.google.com/uc?id=1nGBRn6Y_nr96Di1pjPGaA2ow1CXIMLq9",
-                logo_path,
-                quiet=False
-            )
+  #  col1, col2, col3 = st.columns([1, 1, 1])
+   # with col2:
+    #    logo_path = "logo.png"
+     #   if not os.path.exists(logo_path):
+      #      gdown.download(
+       #         "https://drive.google.com/uc?id=1nGBRn6Y_nr96Di1pjPGaA2ow1CXIMLq9",
+        #        logo_path,
+         #       quiet=False
+          #  )
 
-        st.image(logo_path, width=150, use_container_width=True)
+       # st.image(logo_path, width=150, use_container_width=True)
     
     st.markdown('<div class="card">', unsafe_allow_html=True)
     st.markdown("""
@@ -902,3 +902,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
